@@ -40,7 +40,7 @@ module Jabber
     # Sample output:
     # 'subscription-required: Please subscribe first'
     def to_s
-      "#{@error.error}: #{@error.text}"
+      "#{@error.error}: #{@error.text}" if @error
     end
   end
 
